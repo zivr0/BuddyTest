@@ -9,6 +9,20 @@
     <script src="TemplateData/UnityProgress.javascript"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
+        
+        window.onload = function WindowLoad(event) {
+    alert("Page is loaded");
+
+    if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BuddyWebGl.json", {onProgress: UnityProgress});
         
     </script>
@@ -18,15 +32,7 @@
     <div id="gameContainer" style="width: 540px; height: 960px"></div>
 </div>
 <div class="simmer">המכון הטכנולוגי חולון<a href="https:/hit.ac.il" target="_blank"></a></div>
-<script>  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }</script>
+
 <script src="TemplateData/responsive.javascript"></script>
 
 </body>
