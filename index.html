@@ -16,19 +16,36 @@
 <div class="webgl-content">
     <div id="gameContainer" style="width: 540px; height: 960px">
         <script>function GoInFullscreen(element) {
+            console.log("Reached 19");
             if(element.requestFullscreen)
-                element.requestFullscreen();
+               
+                {
+                    element.requestFullscreen();
+                    console.log("Reached 20");
+                }
             else if(element.mozRequestFullScreen)
+            {
                 element.mozRequestFullScreen();
+                console.log("Reached 21");
+            }
+               
             else if(element.webkitRequestFullscreen)
+            {
                 element.webkitRequestFullscreen();
+                console.log("Reached 22");
+            }
+               
             else if(element.msRequestFullscreen)
+            {
                 element.msRequestFullscreen();
+                console.log("Reached 23");
+            }
+                
         }
         
        
             GoInFullscreen(document.body);
-            location.reload();
+            
         </script>
     
 </div>
