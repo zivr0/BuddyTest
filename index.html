@@ -15,7 +15,20 @@
 <body>
 <div class="webgl-content">
     <div id="gameContainer" style="width: 540px; height: 960px">
-        <div><a href="www.google.com">Click Here to Test</a></div></div>
+        <script>function GoInFullscreen(element) {
+            if(element.requestFullscreen)
+                element.requestFullscreen();
+            else if(element.mozRequestFullScreen)
+                element.mozRequestFullScreen();
+            else if(element.webkitRequestFullscreen)
+                element.webkitRequestFullscreen();
+            else if(element.msRequestFullscreen)
+                element.msRequestFullscreen();
+        }
+        
+        window.addEventListener('load', function() {
+            GoInFullscreen(document.body);
+        })</script>
     
 </div>
 
