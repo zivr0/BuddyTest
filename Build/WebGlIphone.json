@@ -1,0 +1,13 @@
+{
+"companyName": "ZivOrr",
+"productName": "Maccabi Buddy",
+"dataUrl": "WebGlIphone.data.unityweb",
+"wasmCodeUrl": "WebGlIphone.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGlIphone.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#0A3880",
+"cacheControl": {"default": "must-revalidate"}
+}
